@@ -52,9 +52,10 @@ const Page = () => {
                     padding: 10pt;
                     border-top: 25pt solid rgb(0, 25, 0);
                     background: darkturquoise;
-                    box-shadow: 0 0 5px slategray;
+                    box-shadow: 0 5px 5pt slategray;
                     border-radius: 5px 5px 0 0;
                     color: ivory;
+                    margin-bottom: 10pt;
                 }
 
                 @media only screen and (max-width: 600px) {

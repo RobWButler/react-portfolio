@@ -1,79 +1,92 @@
 const portcards = [
     {
-        header: "project name",
+        header: "hangman",
         image: "../../static/portfolio/portfolio1.jpg",
         href: "/",
+        desc: "A rough hangman game. One of my first projects.",
         key: '1'
     },
     {
-        header: "project name",
+        header: "mario rpg",
         image: "../../static/portfolio/portfolio2.jpg",
         href: "/",
+        desc: "A simple RPG made entirely with JS.",
         key: '2'
     },
     {
-        header: "project name",
+        header: "trivia",
         image: "../../static/portfolio/portfolio3.jpg",
         href: "/",
+        desc: "A trivia game based on paleontology and human evolution.",
         key: '3'
     },
     {
-        header: "project name",
+        header: "giphy",
         image: "../../static/portfolio/portfolio4.jpg",
         href: "/",
+        desc: "A simple Giphy search app.",
         key: '4'
     },    {
-        header: "project name",
+        header: "train schedule",
         image: "../../static/portfolio/portfolio5.jpg",
         href: "/",
+        desc: "Using Google Firebase to search and add things to a database.",
         key: '5'
     },    
     {
-        header: "project name",
+        header: "hot drop",
         image: "../../static/portfolio/portfolio6.jpg",
         href: "/",
+        desc: "A proof of concept video game search, news, and video website.",
         key: '6'
     },    
     {
-        header: "project name",
+        header: "liri",
         image: "../../static/portfolio/portfolio7.jpg",
         href: "/",
+        desc: "A Node command line app for searching media.",
         key: '7'
     },    
     {
-        header: "project name",
+        header: "bamazon",
         image: "../static/portfolio/portfolio8.jpg",
         href: "/",
+        desc: "A proof of concept command line inventory management app.",
         key: '8'
     },    
     {
-        header: "project name",
+        header: "friend finder",
         image: "../static/portfolio/portfolio9.jpg",
         href: "/",
+        desc: "A simple quiz and match.",
         key: '9'
     },    
     {
-        header: "project name",
+        header: "eat the burgers",
         image: "../static/portfolio/portfolio10.jpg",
         href: "/",
+        desc: "A database and templating app.",
         key: '10'
     },    
     {
-        header: "project name",
+        header: "duckery",
         image: "../static/portfolio/portfolio11.jpg",
         href: "/",
+        desc: "A character creator for an... attempted site.",
         key: '11'
     },    
     {
-        header: "project name",
+        header: "clicky game",
         image: "../static/portfolio/portfolio12.jpg",
         href: "/",
+        desc: "A simple clicking game made in React.",
         key: '12'
     },
     {
-        header: "project name",
+        header: "google books reader",
         image: "../static/portfolio/portfolio13.jpg",
         href: "/",
+        desc: "A React based site for searching for books and adding them to a reading list.",
         key: '13'
     }
 ]

@@ -6,12 +6,12 @@ import cardlist from "./cardlist"
 const PortCard = () => {
     return(
         <div className='cardcontainer'>
-            {cardlist.map(({ header, image, href, key }) =>
+            {cardlist.map(({ header, desc, image, href, key }) =>
                 <Link href={href} key={key}>
                     <div className="homecard" title={header} style={{backgroundImage: `url(${image})`}}>
                         <h1>{header}</h1>
                         <div className="hovercontainer">
-                            <h2 style={{visibility:'hidden'}}><span>Project Description Here</span></h2>
+                            <h2 style={{visibility:'hidden'}}><span>{desc}</span></h2>
                         </div>
                     </div>
                 </Link>
@@ -29,8 +29,8 @@ const PortCard = () => {
                     background: slategray;
                     box-shadow: 0 5px 5px slategray;
                     margin: 10px;
-                    width: 400px;
-                    height: 240px;
+                    width: 437px;
+                    height: 270px;
                     cursor: pointer;
                     border-radius: 5px 5px 0 0;
                     line-height: 240px;
@@ -69,7 +69,7 @@ const PortCard = () => {
                     position: relative;
                     text-align: left;
                     padding: 5px 0 3px 20px;
-                    font-size: 28px;
+                    font-size: 1.5em;
                     font-family: 'Major Mono Display', monospace;
                     top: 0;
                     color: ivory;
@@ -79,7 +79,7 @@ const PortCard = () => {
                 }
                 h2 {
                     color: ivory;
-                    font-size: 22px;
+                    font-size: 1.5em;
                     font-family: 'Livvic', sans-serif;
                     font-weight: 200;
                     text-align: center;
@@ -88,7 +88,9 @@ const PortCard = () => {
                 span {
                     display: inline-block;
                     vertical-align: middle;
-                    padding-top: 15%;
+                    padding-top: 3em;
+                    padding-left: 1em;
+                    padding-right: 1em;
                     height: 240px;
                 }
 
@@ -97,7 +99,15 @@ const PortCard = () => {
                     .homecard {
                         height: 30vh;
                     }
-
+                    span {
+                        padding: 2em;
+                    }
+                    h1 {
+                        font-size: 1em;
+                    }
+                    h2 {
+                        font-size: 1em;
+                    }
                 }
             `}
             </style>
