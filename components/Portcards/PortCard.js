@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-import Cardlist from "./cardlist"
 import PortModal from '../PortModal'
 
 
 class PortCard extends React.Component {
     state = {
-        cards: Cardlist,
+        cards: this.props.cardlist,
         cardmodal: "",
         modalvis: 'none'
+
     }
 
     loadModal = (card) => {
@@ -27,18 +27,18 @@ class PortCard extends React.Component {
                     <PortModal
                         projectname={this.state.cardmodal.header}
                         projectimage={this.state.cardmodal.image}
-                        projectdesc={this.state.cardmodal.desc}
+                        projectdesc_s={this.state.cardmodal.desc_s}
+                        projectlink={this.state.cardmodal.href}
                         modalstate={this.state.modalvis}
                         closemodal={this.hideModal}
                     />
                 </div>
-                <br/>
                 {this.state.cards.map((card) =>
-                    <Link href="#" key={card.key}>
+                    <Link href={"#" + card.header.split(" ").join("-")} key={card.key}>
                         <div className="homecard" title={card.header} style={{backgroundImage: `url(${card.image})`}} onClick={() => this.loadModal(card)}>
                             <h1>{card.header}</h1>
                             <div className="hovercontainer">
-                                <h2 style={{visibility:'hidden'}}><span>{card.desc}</span></h2>
+                                <h2 style={{visibility:'hidden'}}><span>{card.desc_s}</span></h2>
                             </div>
                         </div>
                     </Link>
@@ -58,7 +58,7 @@ class PortCard extends React.Component {
                         margin: 10px;
                         width: 437px;
                         height: 270px;
-                        cursor: pointer;
+                        cursor: zoom-in;
                         border-radius: 5px 5px 0 0;
                         line-height: 240px;
                         background-position: center;
@@ -66,11 +66,12 @@ class PortCard extends React.Component {
                         background-size: cover; 
                     }
                     .homecard:hover {
-                        box-shadow: 0 5px 10pt darkslateblue;
-                        transform: translateY(-1%);
+                        box-shadow: 0 5px 5pt slategray;
+                        transform: scale(1.1);
                         border-bottom: 5pt solid white;
 
-                        transition: 0.2s linear;
+                        transition: 0.3s ease-out;
+                        z-index: 50;
                         
                         background-position: center; 
                         background-repeat: no-repeat; 
@@ -79,7 +80,12 @@ class PortCard extends React.Component {
                     .homecard:hover h1 {
                         color: rgb(0, 25, 0);
                         background: whitesmoke;
+                        text-shadow: 0 0.5px 0 rgb(0, 25, 0), 
+                                     0.5px 0 0 rgb(0, 25, 0), 
+                                     0 -0.5px 0 rgb(0, 25, 0), 
+                                     -0.5px 0 0 rgb(0, 25, 0);                         
                     }
+
                     .homecard:hover .hovercontainer{
                         background: rgba(115, 124, 201, 0.8);
                         background-size: cover;

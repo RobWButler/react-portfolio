@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Page from '../layouts/main';
+import ContactItem from '../components/ContactItem/ContactItem';
 
 class Contact extends React.Component {
   render(){
@@ -13,13 +14,13 @@ class Contact extends React.Component {
           <div className="navcontainer">
             <Link href="/about"><h2 className="jumbolink">about</h2></Link>
             <Link href="/portfolio"><h2 className="jumbolink">portfolio</h2></Link>
-            <Link href="#"><h2 className="jumbolink current">contact</h2></Link>
+            <Link href="#top"><h2 className="jumbolink current">contact</h2></Link>
           </div>
         </div>
 
         <div className="container mt-5">
             <div className="content">
-              Contact info here
+              <ContactItem/>
             </div>
         </div>
       </div>
