@@ -33,17 +33,17 @@ const NavCard = () => {
                     line-height: 240px;
                 }
                 .homecard:hover {
-                    background: darkslateblue;
+                    background: slateblue;
                     box-shadow: 0 5px 10pt darkslateblue;
                     transform: translateY(-1%);
-                    border-bottom: 5px solid white;
+                    border-bottom: 5pt solid white;
 
                     transition: 0.2s linear;
                 }
 
                 .homecard:hover h1 {
                     color: rgb(0, 25, 0);
-                    background: ivory;
+                    background: whitesmoke;
                 }
 
                 h1 {
@@ -53,13 +53,13 @@ const NavCard = () => {
                     font-size: 28px;
                     font-family: 'Major Mono Display', monospace;
                     top: 0;
-                    color: ivory;
+                    color: whitesmoke;
                     background: rgb(0, 25, 0);
                     border-radius: 5px 5px 0 0;
 
                 }
                 h2 {
-                    color: ivory;
+                    color: whitesmoke;
                     font-size: 22px;
                     font-family: 'Livvic', sans-serif;
                     font-weight: 200;
@@ -80,6 +80,10 @@ const NavCard = () => {
 
                     span {
                         line-height: 10vh;
+                    }
+
+                    .cardcontainer {
+                        margin-top: 12vh;
                     }
                 }
             `}

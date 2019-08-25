@@ -8,6 +8,7 @@ const About = () => (
 
     <div className="jumbotron">
       <h2 className="jumbohead">about</h2>
+      <Link href="#"><h2 className="jumbolink current">about</h2></Link>
       <Link href="/portfolio"><h2 className="jumbolink">portfolio</h2></Link>
       <Link href="/contact"><h2 className="jumbolink">contact</h2></Link>
     </div>
@@ -42,7 +43,7 @@ const About = () => (
         float: left;
       }
       .desc {
-        color: ivory;
+        color: whitesmoke;
         flex: 1;
         list-style: inside;
         font-family: 'Livvic', sans-serif;

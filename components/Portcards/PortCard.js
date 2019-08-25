@@ -39,10 +39,9 @@ const PortCard = () => {
                     background-size: cover; 
                 }
                 .homecard:hover {
-                    background: darkslateblue;
                     box-shadow: 0 5px 10pt darkslateblue;
                     transform: translateY(-1%);
-                    border-bottom: 5px solid white;
+                    border-bottom: 5pt solid white;
 
                     transition: 0.2s linear;
                     
@@ -52,10 +51,10 @@ const PortCard = () => {
                 }
                 .homecard:hover h1 {
                     color: rgb(0, 25, 0);
-                    background: ivory;
+                    background: whitesmoke;
                 }
                 .homecard:hover .hovercontainer{
-                    background: rgba(72, 61, 139, 0.6);
+                    background: rgba(115, 124, 201, 0.8);
                     background-size: cover;
                 }
                 .homecard:hover h2 span {
@@ -72,13 +71,13 @@ const PortCard = () => {
                     font-size: 1.5em;
                     font-family: 'Major Mono Display', monospace;
                     top: 0;
-                    color: ivory;
+                    color: whitesmoke;
                     background: rgb(0, 25, 0);
                     border-radius: 5px 5px 0 0;
 
                 }
                 h2 {
-                    color: ivory;
+                    color: whitesmoke;
                     font-size: 1.5em;
                     font-family: 'Livvic', sans-serif;
                     font-weight: 200;

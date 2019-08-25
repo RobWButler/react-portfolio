@@ -4,6 +4,11 @@ import Head from 'next/head';
 const Page = () => {
    return(  
         <div>
+            <meta
+                name="viewport"
+                content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+                key="viewport"
+            />
             <Head>
                 <title>Robert Butler Web Design</title>
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
@@ -11,14 +16,15 @@ const Page = () => {
             </Head>
             <style jsx global>{`
                 html {
-                    background: radial-gradient(circle, rgb(155, 240, 242) 70%, rgb(0, 15, 0) 180%);
-                    height: 100%;
+                    background: linear-gradient(90deg, rgb(0, 0, 15) -75%, whitesmoke 25% 75%, rgb(0, 0, 15) 175%);
+                    height: 100;
                     flex: 1;
                 }
                 body {
                     background: transparent;
                 }
                 .jumbotron {
+                    position: fixed;
                     background: black;
                     color: white;
                     float: left;
@@ -30,7 +36,7 @@ const Page = () => {
                 }
                 .jumbohead {
                     background: darkslateblue;
-                    color: ivory;
+                    color: whitesmoke;
                     font-size: 28px;
                     font-family: 'Major Mono Display', monospace;
                     font-weight: bold;
@@ -44,9 +50,23 @@ const Page = () => {
                     font-family: 'Major Mono Display', monospace;
                     font-weight: 600;
                     cursor: pointer;
+
+                    transition: 0.05s linear;
                 }
                 .jumbolink:hover {
                     color: skyblue;
+                    border-left: 5pt solid slateblue;
+                    padding-left: 1pt;
+                }
+                .current {
+                    color: black;
+                    background: whitesmoke;
+                    cursor: default;
+                    border-left: 5pt solid slateblue;
+                    padding-left: 1pt;
+                }
+                .current:hover {
+                    color: black;
                 }
                 .content {
                     padding: 10pt;
@@ -54,28 +74,64 @@ const Page = () => {
                     background: darkturquoise;
                     box-shadow: 0 5px 5pt slategray;
                     border-radius: 5px 5px 0 0;
-                    color: ivory;
+                    color: whitesmoke;
                     margin-bottom: 10pt;
+                    width: 100%;
+                    float: right;
                 }
 
                 @media only screen and (max-width: 600px) {
                     .jumbotron {
+                        position: fixed;
+                        top: 0;
+                        z-index: 9999;
+                        float: none;
                         width: 100%;
                         padding: 0 0 5pt 0;
                         margin: 0;
-                        box-shadow: 0 2pt 2pt darkslateblue;
+                        box-shadow: 0 0 0;
                     }
                     .jumbolink {
                         padding: 5pt;
-                        font-size: 80%;
+                        font-size: 90%;
                         font-weight: 600;
                         float: left;
                         flex: 1;
+                        margin-left: 1rem;
                     }
                     .container {
                         float: left;
-                        flex: 1;
                     }
+                    .content {
+                        margin-top: 10vh;
+                        width: 100%;
+                    }
+                }
+
+                @media only screen and (device-width: 768px), only screen and (device-width: 1024px) {
+                    .jumbotron {
+                        position: fixed;
+                        top: 0;
+                        z-index: 9999;
+                        float: none;
+                        width: 100%;
+                        padding: 0 0 5pt 0;
+                        margin: 0;
+                        box-shadow: 0 0 0;
+                    }
+                    .jumbolink {
+                        padding: 5pt;
+                        font-size: 120%;
+                        font-weight: 600;
+                        float: left;
+                        flex: 1;
+                        margin-left: 1rem;
+                    }
+                    .content {
+                        margin-top: 10vh;
+                        width: 100%;
+                    }
+                }
                 }
             `}</style>
         </div>

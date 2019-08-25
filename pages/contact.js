@@ -11,6 +11,7 @@ const Contact = () => (
       <div className="navcontainer">
         <Link href="/about"><h2 className="jumbolink">about</h2></Link>
         <Link href="/portfolio"><h2 className="jumbolink">portfolio</h2></Link>
+        <Link href="#"><h2 className="jumbolink current">contact</h2></Link>
       </div>
     </div>
 

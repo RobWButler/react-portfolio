@@ -10,6 +10,7 @@ const Portfolio = () => (
     <div className="jumbotron">
       <h2 className="jumbohead">portfolio</h2>
       <Link href="/about"><h2 className="jumbolink">about</h2></Link> 
+      <Link href="#"><h2 className="jumbolink current">portfolio</h2></Link>
       <Link href="/contact"><h2 className="jumbolink">contact</h2></Link>
     </div>
 
