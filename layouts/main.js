@@ -33,6 +33,7 @@ const Page = () => {
                     box-shadow: 0 5px 5pt darkslateblue;
                     border-radius: 0;
                     border-top: 5pt solid slateblue;
+                    z-index: 999;
                 }
                 .jumbohead {
                     background: darkslateblue;
