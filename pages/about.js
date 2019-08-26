@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link';
+import Link from '../components/Link';
 import Page from '../layouts/main';
 
 class About extends React.Component {

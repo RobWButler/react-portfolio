@@ -1,5 +1,9 @@
-const isProd = process.env.NODE_ENV === 'production'
+const isProduction = process.env.NODE_ENV === 'production';
+
 module.exports = {
-  // You may only need to add assetPrefix in the production.
-  assetPrefix: isProd ? '/react-portfolio' : '',
-}
+  assetPrefix: isProduction ? '/react-portfolio' : '',
+  publicRuntimeConfig: {
+    // used in '/components/Link.js/', for more details go to the component itself
+    linkPrefix: isProduction ? '/react-portfolio' : ''
+  }
+};
