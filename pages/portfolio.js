@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+import Link from '../components/Link';
 import Page from '../layouts/main';
 import PortCard from '../components/Portcards/PortCard'
 import Cardlist from "../components/Portcards/cardlist";

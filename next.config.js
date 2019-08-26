@@ -1,14 +1,9 @@
-const debug = process.env.NODE_ENV !== "production";
+const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
-    exportPathMap: () => ({
-      '/' : {page: '/'},
-      '/index': { page: '/' },
-      '/home': { page: '/' },
-      '/about': { page: '/about' },
-      '/contact': { page: '/contact' },
-      '/portfolio': { page: '/portfolio' },
-    }),
-    assetPrefix: !debug ? 'https://robwbutler.github.io/new-portfolio/' : '',
+  assetPrefix: isProduction ? '/new-portfolio' : '',
+  publicRuntimeConfig: {
+    // used in '/components/Link.js/', for more details go to the component itself
+    linkPrefix: isProduction ? '/new-portfolio' : ''
   }
-
+};
