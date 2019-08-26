@@ -1,4 +1,4 @@
-const isProd = (process.env.NODE_ENV || 'production') === 'production'
+const debug = process.env.NODE_ENV !== "production";
 
 module.exports = {
     exportPathMap: () => ({
@@ -9,5 +9,6 @@ module.exports = {
       '/contact': { page: '/contact' },
       '/portfolio': { page: '/portfolio' },
     }),
-    assetPrefix: isProd ? '/new-portfolio' : '',
+    assetPrefix: !debug ? 'https://robwbutler.github.io/new-portfolio/' : '',
   }
+
