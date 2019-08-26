@@ -10,7 +10,7 @@ class About extends React.Component {
 
         <div className="jumbotron">
           <h2 className="jumbohead">about</h2>
-          <Link href="#top"><h2 className="jumbolink current">about</h2></Link>
+          <Link href="/about#top"><h2 className="jumbolink current">about</h2></Link>
           <Link href="/portfolio"><h2 className="jumbolink">portfolio</h2></Link>
           <Link href="/contact"><h2 className="jumbolink">contact</h2></Link>
         </div>
@@ -39,10 +39,8 @@ class About extends React.Component {
           .about-container {
             width: 100%;
             height: auto;
-            background: slategray;
             color: rgb(0, 15, 0);
             display: flex;
-            box-shadow: 0 5px 5px darkslategray;
             padding: 10pt;
           }
           .portrait {
@@ -68,7 +66,6 @@ class About extends React.Component {
             flex-wrap: wrap;
             background: whitesmoke;
             box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-            border-bottom: 5pt solid darkslateblue;
             border-top: 10pt solid rgb(0, 15, 0);
             border-radius: 5px 5px 0 0;
           }

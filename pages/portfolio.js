@@ -46,12 +46,13 @@ class Portfolio extends React.Component {
             font-weight: bold;
             padding: 0.5rem;
             text-align: left;
+            transition: 0.1s linear;
           }
           .port-section {
             margin-bottom: 1rem;
           }
           .port-section:hover h2 {
-            border-left: 5pt solid slateblue;
+            border-left: 10pt solid slateblue;
             color: darkslateblue;
             background: whitesmoke;
             text-shadow:  0 0.5px 0 darkslateblue, 
