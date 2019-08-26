@@ -1,5 +1,5 @@
 import React from 'react'
-import Page from "next/link"
+import Page from "../layouts/main"
 import NavCard from "../components/NavCards/NavCard"
 
 class Home extends React.Component {
