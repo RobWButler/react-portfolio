@@ -14,6 +14,13 @@ const portcards = {
                 desc_s: "A character creator for an... attempted site.",
                 key: 2
             },    
+            {
+                header: "hot drop (android)",
+                image: "../static/portfolio/portfolio14.jpg",
+                href: "https://play.google.com/store/apps/details?id=com.hotdrop",
+                desc_s: "A React Native port of Hot Drop for Android devices..",
+                key: 14
+            },    
         ],
         minor: [
             {

@@ -85,9 +85,6 @@ class About extends React.Component {
             h1 {
                 font-size: 1em;
             }
-            h2 {
-                font-size: 1em;
-            }
             h3 {
                 font-size: 1em;
             }

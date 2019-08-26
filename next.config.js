@@ -6,16 +6,17 @@ module.exports = {
       "/index": { page: "/" },
       "/about": { page: "/about" },
       "/contact": { page: "/contact" },
-      "/portfolio": { page: "/portfolio" }
+      "/portfolio": { page: "/portfolio" },
+      "../../static": { page: "./static"}
     };
 
     return paths;
   }
 };
 module.exports = {
-  assetPrefix: isProduction ? '/new-portfolio' : '',
+  assetPrefix: isProduction ? '/' : '',
   publicRuntimeConfig: {
     // used in '/components/Link.js/', for more details go to the component itself
-    linkPrefix: isProduction ? '/new-portfolio' : ''
+    linkPrefix: isProduction ? '/' : ''
   }
 }; 

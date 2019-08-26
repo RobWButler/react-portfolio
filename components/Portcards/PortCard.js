@@ -34,7 +34,7 @@ class PortCard extends React.Component {
                     />
                 </div>
                 {this.state.cards.map((card) =>
-                    <Link href={"#" + card.header.split(" ").join("-")} key={card.key}>
+                    <Link href={"/portfolio#" + card.header.split(" ").join("-")} key={card.key}>
                         <div className="homecard" title={card.header} style={{backgroundImage: `url(${card.image})`}} onClick={() => this.loadModal(card)}>
                             <h1>{card.header}</h1>
                             <div className="hovercontainer">
