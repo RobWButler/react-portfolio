@@ -14,9 +14,9 @@ module.exports = {
   }
 };
 module.exports = {
-  assetPrefix: isProduction ? '/' : '',
+  assetPrefix: isProduction ? '/react-portfolio' : '',
   publicRuntimeConfig: {
     // used in '/components/Link.js/', for more details go to the component itself
-    linkPrefix: isProduction ? '/' : ''
+    linkPrefix: isProduction ? '/react-portfolio' : ''
   }
 }; 
