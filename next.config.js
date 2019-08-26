@@ -3,12 +3,16 @@ const debug = process.env.NODE_ENV !== "production";
 module.exports = {
   exportPathMap: function () {
     return {
-      "/": { page: "/" },
-      "/about": { page: "/about" },
+      '/' : {page: '/'},
+      '/index': { page: '/' },
+      '/home': { page: '/' },
+      '/about': { page: '/about' },
+      '/contact': { page: '/contact' },
+      '/portfolio': { page: '/portfolio' },
     }
   },
   //assetPrefix: '',
-  assetPrefix: !debug ? '/Next-gh-page-example/' : '',
+  assetPrefix: !debug ? '/react-portfolio' : '',
   webpack: (config, { dev }) => {
     // Perform customizations to webpack config
     // console.log('webpack');
