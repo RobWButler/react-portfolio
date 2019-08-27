@@ -12209,7 +12209,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 0:
 /*!**************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=D%3A%5Cprojects%5Creact-portfolio%5Cpages%5Cabout.js ***!
   \**************************************************************************************************************************/
@@ -12232,5 +12232,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map
